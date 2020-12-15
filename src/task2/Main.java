@@ -8,6 +8,8 @@ interface Stopable {
     void stop();
 }
 
+class Engine {}
+
 abstract class Car {
     public Engine engine;
     private String color;
@@ -59,7 +61,7 @@ class LightWeightCar extends Car implements Moveable{
 
 }
 
-class Lorry extends Car, Moveable, Stopable{
+abstract class Lorry extends Car implements Moveable, Stopable {
 
     public void move(){
         System.out.println("Car is moving");
