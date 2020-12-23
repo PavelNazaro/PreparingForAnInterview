@@ -1,4 +1,4 @@
-package Task3;
+package lesson1.task3;
 
 interface Figure {
 
